@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+    <!--Front End Admin Related Pages-->
+    <definition name="common" template="/WEB-INF/layout/classic.jsp">
+        <put-attribute name="css" value="/WEB-INF/layout/css.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+        <put-attribute name="js" value="/WEB-INF/layout/js.jsp" />
+    </definition>
+    
+    
+    <!--Linked Pages Compose-->
+    <definition name="index" extends="common">
+        <put-attribute name="title" value="Welcome To Electronical Record System" />
+        <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    <definition name="register" extends="common">
+        <put-attribute name="title" value="Create a new account" />
+        <put-attribute name="body" value="/WEB-INF/jsp/account/register.jsp" />
+    </definition>
+    <definition name="login" extends="common">
+        <put-attribute name="title" value="Login |www.ads.kirahi.com" />
+        <put-attribute name="body" value="/WEB-INF/jsp/account/login.jsp" />
+    </definition>
+    <definition name="forgot_password" extends="common">
+        <put-attribute name="title" value="Forgot my password ||www.startek.com" />
+        <put-attribute name="body" value="/WEB-INF/jsp/account/forgot_password.jsp" />
+    </definition>
+    
+    <definition name="users" extends="common">
+        <put-attribute name="title" value="Forgot my password ||www.startek.com" />
+        <put-attribute name="body" value="/WEB-INF/jsp/account/forgot_password.jsp" />
+    </definition>
+    
+   
+    
+    
+    
+</tiles-definitions>

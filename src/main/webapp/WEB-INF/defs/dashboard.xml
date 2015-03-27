@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+
+    
+    <!--Admin Pages Design Templete-->
+    <definition name="common_admin" template="/WEB-INF/layout/admin/classic.jsp">
+        <put-attribute name="navbar" value="/WEB-INF/layout/min/navbar.jsp" />
+        <put-attribute name="sidebar" value="/WEB-INF/layout/min/sidebar.jsp" />
+        <put-attribute name="css" value="/WEB-INF/layout/css.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+        <put-attribute name="js" value="/WEB-INF/layout/js.jsp" />
+    </definition>
+  
+    
+     <definition name="dashboard" extends="common_admin">
+        <put-attribute name="title" value="Welcome To Admin Panel | startekcrop.com" />
+        <put-attribute name="dashboard_title" value="Manage Ministry Information" />
+        <put-attribute name="body" value="/WEB-INF/jsp/min/dashboard.jsp" />
+    </definition>
+    
+     <definition name="region" extends="common_admin">
+        <put-attribute name="title" value="Region Data Manager | startekcrop.com" />
+        <put-attribute name="dashboard_title" value="Manage Ministry Region Data" />
+        <put-attribute name="body" value="/WEB-INF/jsp/min/region.jsp" />
+    </definition>
+    
+</tiles-definitions>
